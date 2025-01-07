@@ -1,0 +1,78 @@
+
+/* Estilo general para la navbar */
+.navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    padding: 10px 20px;
+    color: #F5F5F5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+  
+  /* Estilo para el logo */
+  .navbar-logo .logo-img {
+    width: auto;
+    height: auto;
+    max-width: 15%; /* Ajusta la imagen al contenedor */
+    margin: 3px;
+}
+  
+  /* Estilos para la lista de navegación */
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;  /* Espaciado entre los elementos */
+  }
+  
+  .navbar ul li {
+    display: inline;
+  }
+  
+  .navbar ul li a {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efecto hover para los enlaces */
+  .navbar ul li a:hover {
+    background-color: #BB86FC;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para la sección de acciones (por ahora está vacía) */
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Estilo responsivo para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;  /* Cambia la barra a columna en pantallas pequeñas */
+      text-align: center;
+    }
+    
+    .navbar ul {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .navbar-logo .logo-img {
+      width: 80%;  /* Ajusta el tamaño del logo para pantallas pequeñas */
+    }
+  }
+  

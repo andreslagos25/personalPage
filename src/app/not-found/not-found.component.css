@@ -1,0 +1,23 @@
+.notfound-container {
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: calc(100vh - 150); /* Ocupar toda la altura de la pantalla */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espacio adicional alrededor del contenido */
+    box-sizing: border-box; /* Asegurar que el padding no rompa el diseño */
+  }
+  
+  .notfound-container img {
+    max-width: 100%; /* Evita que la imagen se desborde en pantallas pequeñas */
+    height: auto; /* Mantiene la proporción */
+  }
+  
+  .notfound-container p {
+    margin-top: 20px; /* Espacio entre la imagen y el texto */
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    font-family: Arial, sans-serif; /* Fuente simple y profesional */
+  }
+  
